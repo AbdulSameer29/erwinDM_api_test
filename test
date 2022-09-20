@@ -1,11 +1,11 @@
 
-CREATE TABLE [E_1]
+CREATE TABLE [emp]
 ( 
-	[ff]                 char(18)  NOT NULL ,
-	[fff]                char(18)  NULL 
+	[na]                 char(18)  NOT NULL ,
+	[add]                char(18)  NULL 
 )
 go
 
-ALTER TABLE [E_1]
-	ADD CONSTRAINT [XPKE_1] PRIMARY KEY  CLUSTERED ([ff] ASC)
+ALTER TABLE [emp]
+	ADD CONSTRAINT [XPKemployee] PRIMARY KEY  CLUSTERED ([na] ASC)
 go
