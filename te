@@ -1,0 +1,11 @@
+
+CREATE TABLE [employee]
+( 
+	[na]                 char(18)  NOT NULL ,
+	[add]                char(18)  NULL 
+)
+go
+
+ALTER TABLE [employee]
+	ADD CONSTRAINT [XPKemployee] PRIMARY KEY  CLUSTERED ([na] ASC)
+go
