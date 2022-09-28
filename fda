@@ -1,0 +1,34 @@
+
+CREATE TABLE [E_1]
+( 
+	[a]                  char(18)  NOT NULL ,
+	[g]                  char(18)  NULL 
+)
+go
+
+ALTER TABLE [E_1]
+	ADD CONSTRAINT [XPKE_1] PRIMARY KEY  CLUSTERED ([a] ASC)
+go
+
+CREATE TABLE [E_2]
+( 
+	[e]                  char(18)  NOT NULL ,
+	[g]                  char(18)  NULL ,
+	[r]                  char(18)  NOT NULL 
+)
+go
+
+ALTER TABLE [E_2]
+	ADD CONSTRAINT [XPKE_2] PRIMARY KEY  CLUSTERED ([e] ASC,[r] ASC)
+go
+
+CREATE TABLE [t]
+( 
+	[r]                  char(18)  NOT NULL ,
+	[u]                  char(18)  NULL 
+)
+go
+
+ALTER TABLE [t]
+	ADD CONSTRAINT [XPKt] PRIMARY KEY  CLUSTERED ([r] ASC)
+go
